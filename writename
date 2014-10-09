@@ -1,0 +1,26 @@
+#!/bin/bash
+#此脚本用来 DIY ROM 用
+#制作者：陈云
+#写于2014年3月 窝窝
+#写于2014年4月 深圳语信公司
+#写于2014年6月 深圳语信公司
+#写于2014年7月 深圳云雀公司
+PATH=/bin:/sbin:/usr/bin:usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin:~/yun
+export PATH
+
+echo "我的音乐文件列表" > README.md
+echo "===========" >> README.md
+echo "" >> README.md
+echo "mp3文件" >> README.md
+echo "----------" >> README.md
+for i in *.mp3;do
+	echo "" >> README.md
+   echo "$i" >> README.md
+ done
+echo "" >>README.md
+echo "m4a文件" >> README.md
+echo "------------" >> README.md
+for m in *.m4a;do
+	echo "" >>README.md
+	echo "$m" >> README.md
+done
